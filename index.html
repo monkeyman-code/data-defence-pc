@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Data-Defense – Unit 12</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Data-Defense: Protect the Server!</h1>
+
+  <div id="topBar">
+    <span>Wave <b id="wave">1</b></span>
+    <span>Bits (₿) <b id="bits">200</b></span>
+    <span>Lives <b id="lives">20</b></span>
+    <button id="backupBtn">💾 Backup (₿50)</button>
+  </div>
+
+  <canvas id="game" width="800" height="400"></canvas>
+
+  <div id="sidePanel">
+    <h3>Build Folder-Tower</h3>
+    <button class="towerBtn" data-type="docs"  >📁 Docs  (₿50)</button>
+    <button class="towerBtn" data-type="media" >📁 Media (₿70)</button>
+    <button class="towerBtn" data-type="code"  >📁 Code  (₿90)</button>
+
+    <h3>Fix Event Card</h3>
+    <div id="eventCard"></div>
+  </div>
+
+  <dialog id="loseDlg">
+    <h2>Server Corrupted!</h2>
+    <p id="postMortem"></p>
+    <button onclick="location.reload()">Retry</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
